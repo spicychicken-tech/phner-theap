@@ -9,7 +9,7 @@
 **Final delivery:** 22 January 2027  
 **Plan file:** [plan.md](plan.md), version 1.0
 
-> **Note, 26 November 2026:** Today is the first day. This README only describes what we plan to do. It does not say that any task is finished. To see real progress, look at the GitHub Issues, pull requests and tests.
+> **Note:** The project started on 26 November 2026. This README only describes what we plan to do. It does not say that any task is finished. To see real progress, look at the GitHub Issues, pull requests and tests.
 
 ## About the project
 
@@ -19,7 +19,7 @@ An **Admin** controls the platform from a separate site with its own subdomain. 
 
 ### Main features
 
-The full list of must-have features, and what we leave out, is in [MVP_SCOPE.md](docs/MVP_SCOPE.md).
+The full list of must-have features, and what we leave out, is in [PRODUCT_SCOPE.md](docs/PRODUCT_SCOPE.md).
 
 ## Tools
 
@@ -35,8 +35,8 @@ The full list of must-have features, and what we leave out, is in [MVP_SCOPE.md]
 | Place | What it shows | How to use it |
 | --- | --- | --- |
 | [plan.md](plan.md) | Team, schedule, milestones, 56 tasks with owners and dates, risks, estimates, dependencies and done conditions | Read first to know what we promised |
-| [docs/MVP_SCOPE.md](docs/MVP_SCOPE.md) | What is in and out of the project | Check a feature against it |
-| [docs/PROJECT_CHARTER.md](docs/PROJECT_CHARTER.md) | Purpose, goal, roles and how we work together | Read for the big picture |
+| [docs/PRODUCT_SCOPE.md](docs/PRODUCT_SCOPE.md) | What is in and out of the project | Check a feature against it |
+| [docs/TEAM_CHARTER.md](docs/TEAM_CHARTER.md) | Purpose, goal, roles and how we work together | Read for the big picture |
 | [GitHub Issues](https://github.com/spicychicken-tech/phner-theap/issues) | Tasks in progress and what blocks them | Search the task ID, like `PT-009` |
 | [Pull requests](https://github.com/spicychicken-tech/phner-theap/pulls) | Changes, comments and reviews | Each one names its task ID |
 | [Commits](https://github.com/spicychicken-tech/phner-theap/commits) | Every change to code and documents | Read together with the pull request and tests |
