@@ -6,7 +6,7 @@ Keep this file in the repository and update task status each week. The GIC ITC w
 
 **Version:** v1.0 · **Official start:** 2026-11-26 · **Final delivery:** 2027-01-22.
 
-**Product:** A web platform for designing and sharing digital invitations, with a main site for Host and Guest and a separate admin site. Built with Next.js and one MongoDB database. What is in and out of scope is in [docs/MVP_SCOPE.md](docs/MVP_SCOPE.md).
+**Product:** A web platform for designing and sharing digital invitations, with a main site for Host and Guest and a separate admin site. Built with Next.js and one MongoDB database. What is in and out of scope is in [docs/PRODUCT_SCOPE.md](docs/PRODUCT_SCOPE.md).
 
 **Scrum model:** Sprint 0 (Start + Design, one week) and seven one-week sprints. Five members each have about 39 working days. The estimates are **1552 task-hours** (8 hours a day, a task with two or more owners counts for each owner) and **280 provisional Story Points**. Story Points are relative size, not hours.
 
@@ -38,7 +38,7 @@ Keep this file in the repository and update task status each week. The GIC ITC w
 
 - [ ] PT-001: Kick-off meeting · 2026-11-26 to 2026-11-26 · PHE RITHIKA, SAN MEYHIENG, SAR VICHADA, SOENG PRAKBORMEY, SOK KIMHENG
 - [ ] PT-002: Project structure: main site, admin site, shared database code · 2026-11-27 to 2026-12-01 · PHE RITHIKA
-- [ ] PT-003: Create GitHub repository · 2026-12-02 to 2026-12-02 · PHE RITHIKA
+- [ ] PT-003: Create GitHub repository · 2026-11-27 to 2026-11-27 · PHE RITHIKA
 - [ ] PT-004: Write requirements and user stories · 2026-11-27 to 2026-11-27 · SAN MEYHIENG, SAR VICHADA, SOK KIMHENG
 
 ## 2. Design (week 1, 2026-11-30 to 2026-12-02)
@@ -121,11 +121,11 @@ Keep this file in the repository and update task status each week. The GIC ITC w
 
 ## 9. Sprint 7 (week 9, 2027-01-19 to 2027-01-22)
 
-- [ ] PT-052: Admin: New templates (graduation, party, company) · 2027-01-19 to 2027-01-22 · PHE RITHIKA
-- [ ] PT-053: Admin: New templates (birthday, baby shower, housewarming) · 2027-01-19 to 2027-01-22 · SAN MEYHIENG
+- [ ] PT-052: Admin: New templates (graduation, Khmer New Year, memorial, anniversary) · 2027-01-19 to 2027-01-22 · PHE RITHIKA
+- [ ] PT-053: Admin: New templates (birthday, house blessing, baby celebration, corporate event) · 2027-01-19 to 2027-01-22 · SAN MEYHIENG
 - [ ] PT-054: Admin: New templates (modern minimalist) · 2027-01-19 to 2027-01-22 · SAR VICHADA
-- [ ] PT-055: Admin: New templates (wedding, engagement, traditional) · 2027-01-19 to 2027-01-22 · SOENG PRAKBORMEY
-- [ ] PT-056: Host: Filter templates by event and style · 2027-01-19 to 2027-01-22 · SOK KIMHENG
+- [ ] PT-055: Admin: New templates (wedding, engagement, monk ordination, merit-making, general) · 2027-01-19 to 2027-01-22 · SOENG PRAKBORMEY
+- [ ] PT-056: Host: Filter templates by event, style and language · 2027-01-19 to 2027-01-22 · SOK KIMHENG
 
 - [ ] **Milestone: Feature freeze (no new features)** · 2027-01-19
 
@@ -200,23 +200,23 @@ The table gives the proposed **Points** and **Notes**. The importer may ignore i
 | PT-037 | S5 | 5 | P1 | 24 | PT-027 | Admin can see, search and take down invitations. |
 | PT-038 | S5 | 8 | P0 | 40 | PT-027 | Host can add an invitation to the cart and pay. The order is saved. |
 | PT-039 | S5 | 3 | P1 | 16 | PT-027 | Host can edit, duplicate, delete and restore an invitation. |
-| PT-040 | S5 | 8 | P1 | 40 | PT-032, PT-036 | Host can schedule reminders and thank-you messages, gets an email when a guest replies and the day before the event, and can see the history. |
+| PT-040 | S5 | 8 | P1 | 40 | PT-032, PT-036 | Host can schedule reminders and thank-you messages. Emails go in Khmer or English and are queued and retried. Host gets an email when a guest replies. Guests get the event reminder and a change notice. Host can see the history. |
 | PT-041 | S5 | 5 | P1 | 24 | PT-032, PT-036 | Each guest has a personal link and QR code. |
 | PT-042 | S5 | 3 | P1 | 16 | PT-027 | Host can add a gift QR code and guests see it. |
 | PT-043 | S5 | 8 | P1 | 40 | PT-032, PT-036 | Guests can reply and the host sees totals, who opened and meal choices. |
 | PT-044 | S6 | 8 | P1 | 40 | PT-038 | Admin can see orders and payments and mark an order as paid. |
 | PT-045 | S6 | 3 | P1 | 16 | PT-044, PT-037, PT-018 | The admin overview shows real numbers. |
 | PT-046 | S6 | 3 | P1 | 16 | PT-025 | Admin can manage event types and template styles. |
-| PT-047 | S6 | 3 | P1 | 16 | PT-038 | Admin can set up the free plan, the subscription and the one-time payment with their limits and prices. |
+| PT-047 | S6 | 3 | P1 | 16 | PT-038 | Admin can create and edit the free plan, the subscription and the one-time payment, with their prices, duration and limits, without changing code. |
 | PT-048 | S6 | 8 | P1 | 40 | PT-043, PT-038 | The host dashboard shows real numbers from the database. |
 | PT-049 | S6 | 5 | P1 | 24 | PT-027, PT-026 | Host can download the invitation as a PDF or image for printing. |
-| PT-050 | S6 | 5 | P1 | 24 | PT-038, PT-047 | Host can choose a free plan, subscribe, or pay once, and the plan limits are checked. |
+| PT-050 | S6 | 5 | P1 | 24 | PT-038, PT-047 | A pricing page compares the plans. New accounts start on Free. Host can subscribe or pay once for one invitation, locked features show an upgrade prompt, and the host sees the plan and days left. |
 | PT-051 | S6 | 5 | P1 | 24 | PT-036 | Guests can send a wish and the host can read it. |
-| PT-052 | S7 | 5 | P1 | 32 | PT-030 | Graduation, party and company templates are in the database. |
-| PT-053 | S7 | 5 | P1 | 32 | PT-030 | Birthday, baby shower and housewarming templates are in the database. |
-| PT-054 | S7 | 5 | P1 | 32 | PT-030 | Modern minimalist templates are in the database. |
-| PT-055 | S7 | 5 | P1 | 32 | PT-030 | Wedding, engagement and traditional templates are in the database. |
-| PT-056 | S7 | 5 | P1 | 32 | PT-046 | Host can filter templates by event and style. |
+| PT-052 | S7 | 5 | P1 | 32 | PT-030 | Graduation, Khmer New Year, memorial and anniversary templates are in the database, in Khmer, English and bilingual versions. |
+| PT-053 | S7 | 5 | P1 | 32 | PT-030 | Birthday, house blessing, baby celebration and corporate event templates are in the database, in Khmer, English and bilingual versions. |
+| PT-054 | S7 | 5 | P1 | 32 | PT-030 | Minimalist templates for wedding, engagement, birthday and graduation are in the database and have the Minimalist tag. |
+| PT-055 | S7 | 5 | P1 | 32 | PT-030 | Wedding, engagement, monk ordination, merit-making and general templates are in the database, in Khmer, English and bilingual versions. |
+| PT-056 | S7 | 5 | P1 | 32 | PT-046 | Host can filter templates by event, style (including Minimalist) and language, and the result count updates. |
 
 ### Sprint 0 task descriptions (reference for website Notes)
 
